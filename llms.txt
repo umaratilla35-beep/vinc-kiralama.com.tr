@@ -1,5 +1,5 @@
 # Pınar Vinç Kiralama
 
-> Mobil vinç, vinçli kamyon (hiyap) ve makaslı platform kiralama. Türkiye genelinde, operatörlü hizmet. Telefon ve WhatsApp: 0530 937 60 14.
+> Mobil vinç, vinçli kamyon (hiyap) ve makaslı platform kiralama. Operatörlü hizmet. Telefon ve WhatsApp: 0530 937 60 14.
 
 - [Ana sayfa](https://vinc-kiralama.com.tr/): hizmetler, çalışma süreci, sık sorulan sorular ve teklif formu
