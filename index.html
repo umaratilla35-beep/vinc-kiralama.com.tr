@@ -24,11 +24,20 @@ function gtag(){dataLayer.push(arguments);}
 gtag("consent", "default", {ad_storage:"denied", ad_user_data:"denied", ad_personalization:"denied", analytics_storage:"denied", wait_for_update:500});
 try { if (localStorage.getItem("pv_consent") === "granted") gtag("consent", "update", {ad_storage:"granted", ad_user_data:"granted", ad_personalization:"granted", analytics_storage:"granted"}); } catch(e) {}
 </script>
-<!-- Google Ads etiketi (şehirler arası · 216-665-7948) -->
+<!-- Google Tag Manager -->
+<script>(function(w,d,s,l,i){w[l]=w[l]||[];w[l].push({'gtm.start':
+new Date().getTime(),event:'gtm.js'});var f=d.getElementsByTagName(s)[0],
+j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
+'https://www.googletagmanager.com/gtm.js?id='+i+dl;f.parentNode.insertBefore(j,f);
+})(window,document,'script','dataLayer','GTM-WDRSV2QR');</script>
+<!-- End Google Tag Manager -->
+<!-- Google Ads + Analytics etiketi (şehirler arası · 216-665-7948) -->
 <script async src="https://www.googletagmanager.com/gtag/js?id=AW-18487154000"></script>
 <script>
 gtag("js", new Date());
 gtag("config", "AW-18487154000");
+gtag("config", "G-QPH1V7WM87");
+window.PV_GA = "G-QPH1V7WM87";
 window.PV_ADS = {
   telefon: "AW-18487154000/40hxCNnL66MdENCqru9E",  // Site - Telefon tıklaması
   whatsapp: "AW-18487154000/kiPSCN_L66MdENCqru9E"  // Site - WhatsApp tıklaması
@@ -140,7 +149,7 @@ section{scroll-margin-top:70px}
 
 /* 2 · Hizmetler */
 .svc{display:grid;grid-template-columns:repeat(3,1fr);gap:20px}
-.card{background:var(--paper);border:1px solid var(--line);border-radius:var(--r);overflow:hidden;display:flex;flex-direction:column;transition:box-shadow .2s,transform .2s}
+.card{scroll-margin-top:80px;background:var(--paper);border:1px solid var(--line);border-radius:var(--r);overflow:hidden;display:flex;flex-direction:column;transition:box-shadow .2s,transform .2s}
 .card:hover{transform:translateY(-4px);box-shadow:0 18px 40px rgba(17,17,17,.10)}
 .card picture img{aspect-ratio:4/3;object-fit:cover;width:100%}
 .card .body{padding:20px 22px 24px;display:flex;flex-direction:column;gap:10px;flex:1}
@@ -244,6 +253,7 @@ footer nav{display:flex;gap:18px;flex-wrap:wrap}
 </style>
 </head>
 <body>
+<noscript><iframe src="https://www.googletagmanager.com/ns.html?id=GTM-WDRSV2QR" height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
 
 <svg width="0" height="0" style="position:absolute" aria-hidden="true">
   <symbol id="i-phone" viewBox="0 0 24 24"><path fill="currentColor" d="M6.6 10.8a15.1 15.1 0 0 0 6.6 6.6l2.2-2.2a1 1 0 0 1 1-.25 11.4 11.4 0 0 0 3.6.57 1 1 0 0 1 1 1V20a1 1 0 0 1-1 1A17 17 0 0 1 3 4a1 1 0 0 1 1-1h3.5a1 1 0 0 1 1 1c0 1.25.2 2.45.57 3.57a1 1 0 0 1-.25 1z"/></symbol>
@@ -313,42 +323,42 @@ footer nav{display:flex;gap:18px;flex-wrap:wrap}
       <p>Yükün ağırlığına, kaldırma yüksekliğine ve sahanın durumuna göre doğru aracı seçiyor, işi operatörümüzle birlikte planlıyoruz.</p>
     </div>
     <div class="svc">
-      <article class="card">
+      <article class="card" id="mobil-vinc">
         <picture><source type="image/avif" srcset="/img/mobil-vinc-480.avif"><img src="/img/mobil-vinc-480.webp" alt="Kırmızı mobil vinç bomu açık halde" width="480" height="640" loading="lazy"></picture>
         <div class="body"><span class="ico"><svg><use href="#i-crane"/></svg></span>
           <h3>Mobil Vinç Kiralama</h3>
           <p>Yüksek tonajlı kaldırmalar, çelik konstrüksiyon montajı ve uzun bom gerektiren işler için mobil vinç.</p>
           <a class="more" href="#teklif" data-cta="quote-mobil">Teklif iste <svg width="18" height="18"><use href="#i-arrow"/></svg></a></div>
       </article>
-      <article class="card">
+      <article class="card" id="hiyap">
         <picture><source type="image/avif" srcset="/img/kalip-480.avif"><img src="/img/kalip-480.webp" alt="Vinçli kamyon şantiyede kalıp indiriyor" width="480" height="640" loading="lazy"></picture>
         <div class="body"><span class="ico"><svg><use href="#i-truck"/></svg></span>
           <h3>Hiyap / Vinçli Kamyon</h3>
           <p>Malzemeyi hem taşıyan hem indiren araç: kalıp, demir, palet ve inşaat malzemesi için pratik çözüm.</p>
           <a class="more" href="#teklif" data-cta="quote-hiyap">Teklif iste <svg width="18" height="18"><use href="#i-arrow"/></svg></a></div>
       </article>
-      <article class="card">
+      <article class="card" id="makasli-platform">
         <picture><source type="image/avif" srcset="/img/platform-480.avif"><img src="/img/platform-480.webp" alt="Makaslı platform bina cephesinde açık" width="480" height="360" loading="lazy"></picture>
         <div class="body"><span class="ico"><svg><use href="#i-lift"/></svg></span>
           <h3>Makaslı Platform</h3>
           <p>Cephe, tavan, aydınlatma ve bakım işleri için güvenli yüksekte çalışma platformu.</p>
           <a class="more" href="#teklif" data-cta="quote-platform">Teklif iste <svg width="18" height="18"><use href="#i-arrow"/></svg></a></div>
       </article>
-      <article class="card">
+      <article class="card" id="is-makinesi">
         <picture><source type="image/avif" srcset="/img/paletli-480.avif"><img src="/img/paletli-480.webp" alt="Paletli iş makinesi vinçle lowbed dorsesine yükleniyor" width="480" height="640" loading="lazy"></picture>
         <div class="body"><span class="ico"><svg><use href="#i-gear"/></svg></span>
           <h3>İş Makinesi Yükleme</h3>
           <p>Dozer, kepçe ve tarım makinelerinin dorseye yüklenmesi ve indirilmesi.</p>
           <a class="more" href="#teklif" data-cta="quote-makine">Teklif iste <svg width="18" height="18"><use href="#i-arrow"/></svg></a></div>
       </article>
-      <article class="card">
+      <article class="card" id="konteyner">
         <picture><source type="image/avif" srcset="/img/konteyner-480.avif"><img src="/img/konteyner-480.webp" alt="Prefabrik konteyner vinçli kamyonla taşınıyor" width="480" height="360" loading="lazy"></picture>
         <div class="body"><span class="ico"><svg><use href="#i-box"/></svg></span>
           <h3>Konteyner Taşıma</h3>
           <p>Şantiye ve prefabrik konteynerlerin yerinden alınıp yeni konumuna yerleştirilmesi.</p>
           <a class="more" href="#teklif" data-cta="quote-konteyner">Teklif iste <svg width="18" height="18"><use href="#i-arrow"/></svg></a></div>
       </article>
-      <article class="card">
+      <article class="card" id="insaat-malzemesi">
         <picture><source type="image/avif" srcset="/img/demir-480.avif"><img src="/img/demir-480.webp" alt="İnşaat demiri vinçle sahaya indiriliyor" width="480" height="640" loading="lazy"></picture>
         <div class="body"><span class="ico"><svg><use href="#i-beam"/></svg></span>
           <h3>İnşaat Malzemesi</h3>
@@ -513,6 +523,7 @@ footer nav{display:flex;gap:18px;flex-wrap:wrap}
     var isWa = kind.indexOf("wa") === 0;
     window.dataLayer.push({ event: isWa ? "whatsapp_click" : "phone_click", cta: kind });
     gtag("event", "conversion", { send_to: isWa ? window.PV_ADS.whatsapp : window.PV_ADS.telefon });
+    gtag("event", isWa ? "whatsapp_click" : "phone_click", { send_to: window.PV_GA, cta: kind });
   });
 
   // Teklif formu → WhatsApp mesajı (WhatsApp dönüşümü olarak sayılır)
@@ -526,6 +537,7 @@ footer nav{display:flex;gap:18px;flex-wrap:wrap}
     if (v("q-not")) L.push("Not: " + v("q-not"));
     window.dataLayer.push({ event: "quote_form_submit", form_service: v("q-is") });
     gtag("event", "conversion", { send_to: window.PV_ADS.whatsapp });
+    gtag("event", "generate_lead", { send_to: window.PV_GA, form_service: v("q-is") });
     window.open("https://wa.me/" + WA + "?text=" + encodeURIComponent(L.join("\n")), "_blank", "noopener");
   });
 })();
